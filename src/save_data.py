@@ -5,13 +5,13 @@ def save_data(student_list):
     data = []
     for student in student_list:
         data.append({
-            student.student_id: {
+                'student_id': student.student_id,
                 'student_name': student.student_name,
                 'student_surname': student.student_surname,
                 'student_gpa': student.student_gpa,
                 'student_class': student.student_class,
                 'student_grade': student.student_grade
-            }
+            
         })
         
     df = pd.DataFrame(data)
